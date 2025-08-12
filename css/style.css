@@ -682,6 +682,16 @@ section {
 	}
 }
 
+.lazy-img {
+	opacity: 0;
+	transition: opacity .4s ease;
+}
+/* 載入完成 */
+.lazy-img.is-loaded {
+	opacity: 1;
+	/* 若用了骨架的話也可在這裡移除模糊/背景 */
+}
+
 .portfolio .portfolio-item {
 	margin-bottom: 10px;
 }
