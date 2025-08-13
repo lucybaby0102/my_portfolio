@@ -733,7 +733,7 @@ section {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-	/* height: 140px; */
+	height: 140px;
 }
 .filter-card .portfolio-wrap,.filter-web .portfolio-wrap,.filter-mov .portfolio-wrap{
 	height: 250px;
