@@ -269,7 +269,21 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 }
 
+/* 初始狀態先隱藏，避免閃爍 */
+#mypersonal h1, #mypersonal h2, #mypersonal .btn-get-started {
+	opacity: 0;
+}
+/* 讓大標看起來穩定 */
+#mypersonal h1 { letter-spacing: .02em; }
+#mypersonal h2 { letter-spacing: .01em; }
 
+/* 針對 prefers-reduced-motion：關閉過多動畫 */
+@media (prefers-reduced-motion: reduce) {
+	#mypersonal h1, #mypersonal h2, #mypersonal .btn-get-started {
+		opacity: 1 !important;
+		transform: none !important;
+	}
+}
 
 #mypersonal {
 	width: 100%;
@@ -277,6 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: url("../images/top-bg.jpg") top center;
 	background-size: cover;
 	position: relative;
+	padding-bottom: clamp(56px, 8vh, 96px);
 }
 .top-videobg {
 	width: 100%;
@@ -292,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #mypersonal h1 {
 	margin: 0 0 10px 0;
-	font-size: 40px;
+	font-size: clamp(1.5rem, 4vw, 3.2rem);
 	font-weight: 700;
 	line-height: 56px;
 	color: #ffff;
@@ -302,43 +317,45 @@ h1, h2, h3, h4, h5, h6 {
 
 #mypersonal h2 {
 	color: #eee;
-	margin-bottom: 10px;
-	font-size: 20px;
+	margin-bottom: 50px;
+	font-size: clamp(1rem, 2.5vw, 2rem);
 	font-weight: 300;
 	font-family: "Poppins", sans-serif;
 	text-shadow: 0px 5px 10px #f88;
 }
 
 #mypersonal .btn-get-started {
-	font-size: 64px;
+	/* font-size: 64px;
 	transition: 0.5s;
 	color: #f88;
 	height: 60px;
-	text-shadow: 0px 5px 5px #ffff;
+	text-shadow: 0px 5px 5px #ffff; */
+	position: absolute;
+	left: 50%;
+	bottom: calc(clamp(40px, 6vh, 72px) + env(safe-area-inset-bottom, 0px));
+	transform: translateX(-50%);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	font-size: 64px;
+	color: #f88;
+	text-shadow: 0 5px 5px #fff;
+	transition: transform .3s ease; 
+}
+
+#mypersonal .btn-get-started i {
+	display: inline-block;
 }
 
 #mypersonal .btn-get-started:hover {
-	padding-top: 10px;
-	color: #d43076;
-	transition: 0.5s;
-	height: 60px;
+	transform: translate(-50%, -6px); 
 }
 
 @media (min-width: 1024px) {
 	#mypersonal {
 		background-attachment: fixed;
-	}
-}
-
-@media (max-width: 768px) {
-	#mypersonal h1 {
-		font-size: 28px;
-		line-height: 36px;
-	}
-	#mypersonal h2 {
-		font-size: 18px;
-		line-height: 24px;
-		margin-bottom: 30px;
 	}
 }
 
