@@ -2,10 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (!window.gsap) { console.error('GSAP not loaded'); return; }
 	gsap.registerPlugin(TextPlugin);
 
+	if(window.__mypersonalInited) return;
+	window.__mypersonalInited = true;
+	
 	const h1 = document.querySelector('#mypersonal h1');
 	const h2 = document.querySelector('#mypersonal h2');
 	const cta = document.querySelector('#mypersonal .btn-get-started');
 
+	gsap.killTweensOf([h1, h2, cta])
+	
 	// 若使用者偏好減少動畫：直接顯示並結束
 	if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 		gsap.set([h1, h2, cta], { opacity: 1, clearProps: 'all' });
