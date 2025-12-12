@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// 目標文字
 	const h1Final = "Hi, I'm Nozomi!";
-	const h2Final = "I am a Web Designer";
+	const h2Final = "Designing thoughtful web experiences";
 
 	
 // 初始狀態
