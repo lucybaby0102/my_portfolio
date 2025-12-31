@@ -528,6 +528,19 @@ section {
 	}
 }
 
+.skills > .container {
+	display: flex;
+    gap: 0 60px;
+}
+
+@media (max-width: 991px) {
+	.skills > .container {
+		flex-direction: column;
+	}
+}
+
+.section-title,.skills-content {flex: 1 1 0;}
+
 
 .skills .progress {
 	height: 50px;
@@ -1133,3 +1146,28 @@ section {
 	text-align: center;
 	font-size: 13px;
 }
+
+
+/* 1) 讓遮罩真的蓋滿整個視窗寬度（含捲軸區） */
+.modal-backdrop {
+  width: 100vw;
+}
+
+/* 2) 開 modal 時：背景不能滾（Bootstrap 原本會加 modal-open，但這裡強制保險） */
+body.modal-open {
+  overflow: hidden !important;
+}
+
+/* 3) 關鍵：禁止 Bootstrap 的 scrollbar 補償 padding（造成推擠/白邊） */
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+/* 4) 有些模板會對 fixed header 也補 padding-right，一併清掉 */
+body.modal-open #header,
+body.modal-open .fixed-top,
+body.modal-open .fixed-bottom,
+body.modal-open .sticky-top {
+  padding-right: 0 !important;
+}
+

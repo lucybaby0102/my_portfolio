@@ -117,35 +117,35 @@
 							</div>
 						</div>
 						<div class="progress">
-							<span class="skill">Illustrator <i class="val">90%</i></span>
+							<span class="skill">Illustrator <i class="val">86%</i></span>
 							<div class="progress-bar-wrap">
-								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+								<div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;"></div>
 							</div>
 						</div>
 						<div class="progress">
 							<span class="skill"> Figma <i class="val">70%</i></span>
 							<div class="progress-bar-wrap">
-								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+								<div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"></div>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="progress">
-							<span class="skill">HTML &amp; CSS/SASS <i class="val">70%</i></span>
+							<span class="skill">HTML/PUG &amp; CSS/SASS <i class="val">75%</i></span>
 							<div class="progress-bar-wrap">
-								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+								<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
 							</div>
 						</div>
 						<div class="progress">
-							<span class="skill">JavaScript <i class="val">45%</i></span>
+							<span class="skill">JavaScript <i class="val">55%</i></span>
 							<div class="progress-bar-wrap">
-								<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
+								<div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
 							</div>
 						</div>
 						<div class="progress">
-							<span class="skill">After Effects &amp; Premiere <i class="val">65%</i></span>
+							<span class="skill">After Effects &amp; Premiere <i class="val">63%</i></span>
 							<div class="progress-bar-wrap">
-								<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+								<div class="progress-bar" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100" style="width: 63%;"></div>
 							</div>
 						</div>
 					</div>
@@ -239,544 +239,587 @@
 				<div class="section-title">
 					<h2>Project Portfolio-網頁設計</h2>
 				</div>
-				<div class="row portfolio-container" style="position: relative; height: 780px;">
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/event_ark_0529.webp"
-										alt="LOST ARK新大陸弗戴克"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>LOST ARK新大陸弗戴克</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/event_ark_0529.webp" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/lostark/event/250529_Voldaik/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/ARK_illiakan.webp"
-										alt="LOST ARK疫病軍團長"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>LOST ARK疫病軍團長</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/ARK_illiakan.webp" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/lostark/event/250227_Illiakan/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+				<!-- ✅ 只放 6 個作品的預覽區 -->
+				<div class="row portfolio-container portfolio-preview" data-limit="6"></div>
+
+				<!-- ✅ More 按鈕 -->
+				<div class="text-center mt-4">
+				<button
+					type="button"
+					class="btn btn-outline-dark btn-portfolio-more"
+					data-bs-toggle="modal"
+					data-bs-target="#portfolioMoreModal"
+					data-title="Project Portfolio-網頁設計"
+					data-source="#portfolio .portfolio-source"
+				>
+					More
+				</button>
+				</div>
+
+				<div class="portfolio-source d-none">
+					<div class="row portfolio-container portfolio-container-source">
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											src="./images/portfolio/event_ark_0529.webp"
+											data-src="./images/portfolio/event_ark_0529.webp"
+											alt="LOST ARK新大陸弗戴克"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>LOST ARK新大陸弗戴克</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/event_ark_0529.webp" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/lostark/event/250529_Voldaik/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/ARK_TimeTogether.jpg"
-										alt="LOST ARK在一起的時光"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>LOST ARK在一起的時光</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/ARK_TimeTogether.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/lostark/event/250123_TimeTogether/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/LA_Stella.webp"
-										alt="彩虹島物語劍聖宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>彩虹島物語劍聖宣傳活動頁</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/LA_Stella.webp" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/la/event/250220_STELLA_SwordEmperor/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											src="./images/portfolio/ARK_illiakan.webp"
+											data-src="./images/portfolio/ARK_illiakan.webp"
+											alt="LOST ARK疫病軍團長"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>LOST ARK疫病軍團長</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/ARK_illiakan.webp" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/lostark/event/250227_Illiakan/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-sakura.jpg"
-										alt="彩虹島物語x庫洛魔法使：透明牌篇宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>彩虹島物語x庫洛魔法使宣傳活動頁</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-sakura.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/la/event/241219_LaTaleOnline_x_CardcaptorSakura/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-black_s7.jpg"
-										alt="AU勁舞團Black_s7宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>AU勁舞團Black_s7宣傳活動頁</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-black_s7.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/au/event/241023_StarrySkyDanceParty/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											src="./images/portfolio/ARK_TimeTogether.jpg"
+											data-src="./images/portfolio/ARK_TimeTogether.jpg"
+											alt="LOST ARK在一起的時光"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>LOST ARK在一起的時光</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/ARK_TimeTogether.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/lostark/event/250123_TimeTogether/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-hot01.jpg"
-										alt="熱血江湖遊戲宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>熱血江湖遊戲宣傳活動頁</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-hot01.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<!-- <a href="https://landing.mangot5.com/template/hot/event/240711_swordemperor/index.html" title="More Details"> -->
-								<a href="https://lucybaby0102.github.io/swordemperor/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-12Sky2Ori_01.jpg"
-										alt="12之天2Ori新增伺服器宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>12之天2Ori新增伺服器宣傳活動頁</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-12Sky2Ori_01.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/12sky2ori/event/240509_stormlegend/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											src="./images/portfolio/LA_Stella.webp"
+											data-src="./images/portfolio/LA_Stella.webp"
+											alt="彩虹島物語劍聖宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>彩虹島物語劍聖宣傳活動頁</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/LA_Stella.webp" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/la/event/250220_STELLA_SwordEmperor/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-12Sky2Ori_02.jpg"
-										alt="12之天2Ori伺服器改版宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>12之天2Ori伺服器改版宣傳活動頁</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-12Sky2Ori_02.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/12sky2ori/event/240905_divineveins/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-12Sky2Ori_03.jpg"
-										alt="12之天2Ori新地圖更新宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>12之天2Ori新地圖更新宣傳活動頁</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-12Sky2Ori_03.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/12sky2ori/event/241107_DragonWars/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											src="./images/portfolio/portfolio-sakura.jpg"
+											data-src="./images/portfolio/portfolio-sakura.jpg"
+											alt="彩虹島物語x庫洛魔法使：透明牌篇宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>彩虹島物語x庫洛魔法使宣傳活動頁</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-sakura.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/la/event/241219_LaTaleOnline_x_CardcaptorSakura/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-la01.jpg"
-										alt="彩虹島宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>彩虹島宣傳活動頁</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-la01.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/la/event/240412_universe/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio_YGRB.jpg"
-										alt="少女綻華官方網站"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>少女綻華官方網站</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio_YGRB.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://ygrb.mangot5.com/ygrb/index" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											src="./images/portfolio/portfolio-black_s7.jpg"
+											data-src="./images/portfolio/portfolio-black_s7.jpg"
+											alt="AU勁舞團Black_s7宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>AU勁舞團Black_s7宣傳活動頁</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-black_s7.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/au/event/241023_StarrySkyDanceParty/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio_YGRB_R.jpg"
-										alt="少女綻華事前預約"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>少女綻華事前預約</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio_YGRB_R.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://lucybaby0102.github.io/reservation_ygrb/" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/DOREMI_official.jpg"
-										alt="小魔女DoReMi拼圖嘉年華"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>小魔女DoReMi拼圖嘉年華</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/DOREMI_official.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://doremi.mangot5.com/doremi/index" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-hot01.jpg"
+											alt="熱血江湖遊戲宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>熱血江湖遊戲宣傳活動頁</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-hot01.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<!-- <a href="https://landing.mangot5.com/template/hot/event/240711_swordemperor/index.html" title="More Details"> -->
+									<a href="https://lucybaby0102.github.io/swordemperor/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/LA_2023fashion.webp"
-										alt="彩虹島設計大賞宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>彩虹島設計大賞宣傳活動頁</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/LA_2023fashion.webp" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/la/event/230317_fashion_event/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-30.jpg"
-										alt="12之天2ori遊戲宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>12之天2ori遊戲宣傳活動頁</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-30.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/12sky2ori/event/220506_2years/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-12Sky2Ori_01.jpg"
+											alt="12之天2Ori新增伺服器宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>12之天2Ori新增伺服器宣傳活動頁</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-12Sky2Ori_01.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/12sky2ori/event/240509_stormlegend/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-60.jpg"
-										alt="遊戲宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>遊戲宣傳活動頁</h4>
-								<p>響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-60.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/la/event/221006_puneuma/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-61.jpg"
-										alt="12之天2ori宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>12之天2ori宣傳活動頁</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-61.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/12sky2ori/event/220801_kingevent/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-12Sky2Ori_02.jpg"
+											alt="12之天2Ori伺服器改版宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>12之天2Ori伺服器改版宣傳活動頁</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-12Sky2Ori_02.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/12sky2ori/event/240905_divineveins/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-62.webp"
-										alt="遊戲宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>遊戲宣傳活動頁</h4>
-								<p>負責響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-62.webp" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/au/event/220621_quartet/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-63.webp"
-										alt="遊戲宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>遊戲宣傳活動頁</h4>
-								<p>設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-63.webp" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/aika/event/221004_Valhalla/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-12Sky2Ori_03.jpg"
+											alt="12之天2Ori新地圖更新宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>12之天2Ori新地圖更新宣傳活動頁</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-12Sky2Ori_03.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/12sky2ori/event/241107_DragonWars/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-28_s.jpg"
-										alt="勁舞團3v3宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>勁舞團3v3宣傳活動頁</h4>
-								<p>負責響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-28.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://landing.mangot5.com/template/au/event/221103_au_3v3contest/index.html" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-29.jpg"
-										alt="遊戲宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>遊戲宣傳活動頁</h4>
-								<p>PC版本設計及響應式切版網頁</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-29.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://lucybaby0102.github.io/newtype_sao/" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-la01.jpg"
+											alt="彩虹島宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>彩虹島宣傳活動頁</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-la01.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/la/event/240412_universe/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-59.webp"
-										alt="遊戲宣傳平台"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>遊戲宣傳平台</h4>
-								<p>RWD版本</p>
-							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-59.webp" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://lucybaby0102.github.io/game_promotion/" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio_YGRB.jpg"
+											alt="少女綻華官方網站"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>少女綻華官方網站</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio_YGRB.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://ygrb.mangot5.com/ygrb/index" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-						<div class="portfolio-wrap">
-							<img class="img-fluid lazy-img"
-										loading="lazy"
-										data-src="./images/portfolio/portfolio-32.jpg"
-										alt="遊戲宣傳活動頁"
-										width="800" height="450"
-										decoding="async">
-							<div class="portfolio-info">
-								<h4>遊戲宣傳活動頁</h4>
-								<p>Mobile版本</p>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio_YGRB_R.jpg"
+											alt="少女綻華事前預約"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>少女綻華事前預約</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio_YGRB_R.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://lucybaby0102.github.io/reservation_ygrb/" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
-							<div class="portfolio-links">
-								<a href="./images/portfolio/portfolio-32.jpg" class="portfolio-lightbox">
-									<span class="material-icons">search</span>
-								</a>
-								<a href="https://lucybaby0102.github.io/newtype_sao_m/" title="More Details">
-									<i class="bx bx-link"></i>
-								</a>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/DOREMI_official.jpg"
+											alt="小魔女DoReMi拼圖嘉年華"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>小魔女DoReMi拼圖嘉年華</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/DOREMI_official.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://doremi.mangot5.com/doremi/index" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/LA_2023fashion.webp"
+											alt="彩虹島設計大賞宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>彩虹島設計大賞宣傳活動頁</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/LA_2023fashion.webp" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/la/event/230317_fashion_event/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-30.jpg"
+											alt="12之天2ori遊戲宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>12之天2ori遊戲宣傳活動頁</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-30.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/12sky2ori/event/220506_2years/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-60.jpg"
+											alt="遊戲宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>遊戲宣傳活動頁</h4>
+									<p>響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-60.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/la/event/221006_puneuma/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-61.jpg"
+											alt="12之天2ori宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>12之天2ori宣傳活動頁</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-61.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/12sky2ori/event/220801_kingevent/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-62.webp"
+											alt="遊戲宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>遊戲宣傳活動頁</h4>
+									<p>負責響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-62.webp" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/au/event/220621_quartet/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-63.webp"
+											alt="遊戲宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>遊戲宣傳活動頁</h4>
+									<p>設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-63.webp" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/aika/event/221004_Valhalla/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-28_s.jpg"
+											alt="勁舞團3v3宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>勁舞團3v3宣傳活動頁</h4>
+									<p>負責響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-28.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://landing.mangot5.com/template/au/event/221103_au_3v3contest/index.html" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web" >
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-29.jpg"
+											alt="遊戲宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>遊戲宣傳活動頁</h4>
+									<p>PC版本設計及響應式切版網頁</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-29.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://lucybaby0102.github.io/newtype_sao/" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web">
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-59.webp"
+											alt="遊戲宣傳平台"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>遊戲宣傳平台</h4>
+									<p>RWD版本</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-59.webp" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://lucybaby0102.github.io/game_promotion/" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-web">
+							<div class="portfolio-wrap">
+								<img class="img-fluid lazy-img"
+											loading="lazy"
+											data-src="./images/portfolio/portfolio-32.jpg"
+											alt="遊戲宣傳活動頁"
+											width="800" height="450"
+											decoding="async">
+								<div class="portfolio-info">
+									<h4>遊戲宣傳活動頁</h4>
+									<p>Mobile版本</p>
+								</div>
+								<div class="portfolio-links">
+									<a href="./images/portfolio/portfolio-32.jpg" class="portfolio-lightbox">
+										<span class="material-icons">search</span>
+									</a>
+									<a href="https://lucybaby0102.github.io/newtype_sao_m/" title="More Details">
+										<i class="bx bx-link"></i>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 		<section id="portfolio-ad" class="portfolio section-bg">
 			<div class="container">
 				<div class="section-title">
 					<h2>Project Portfolio-行銷廣告</h2>
-					<div class="row portfolio-container">
+				</div>
+
+				<div class="row portfolio-container portfolio-preview" data-limit="6"></div>
+
+				<div class="text-center mt-4">
+					<button
+						type="button"
+						class="btn btn-outline-dark btn-portfolio-more"
+						data-bs-toggle="modal"
+						data-bs-target="#portfolioMoreModal"
+						data-title="Project Portfolio-行銷廣告"
+						data-source="#portfolio-ad .portfolio-source"
+					>
+						More
+					</button>
+				</div>
+				<div class="portfolio-source d-none">
+					<div class="row portfolio-container portfolio-container-source">
 						<div class="col-lg-4 col-md-6 portfolio-item filter-app">
 							<div class="portfolio-wrap">
 								<img class="img-fluid lazy-img"
@@ -1595,6 +1638,7 @@
 								</div>
 							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -1868,8 +1912,28 @@
 	</main>
 
 
-	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+	<div class="modal fade" id="portfolioMoreModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable">
+			<div class="modal-content">
 
+			<div class="modal-header">
+				<h5 class="modal-title" id="portfolioMoreModalTitle">Project Portfolio-網頁設計</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+
+			<div class="modal-body">
+				<div class="portfolio">
+					<div class="row g-3 js-portfolio-modal-grid"></div>
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
 	<!-- <script>
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));
